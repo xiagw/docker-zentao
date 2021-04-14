@@ -3,7 +3,6 @@ version: '3'
 services:
 
     zentao:
-      # image: chaiyd/zentao:12.5.3
       build:
         context: ./zentao
         args:
@@ -36,6 +35,6 @@ services:
         - ./mysql-data:/var/lib/mysql
         - ${MYSQL_ENTRYPOINT_INITDB}:/docker-entrypoint-initdb.d
 
-volumes:
-  mysql-data:
-  zentao-data:
+# volumes:
+#   mysql-data:
+#   zentao-data:

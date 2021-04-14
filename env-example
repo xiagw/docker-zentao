@@ -9,9 +9,9 @@ TZ=UTC
 MYSQL_VERSION=latest
 MYSQL_DATABASE=zentao
 MYSQL_USER=zentao
-MYSQL_PASSWORD=ukC2ZkcG_ZTeb
+MYSQL_PASSWORD=eeVaixav5eiw
 MYSQL_PORT=3306
-MYSQL_ROOT_PASSWORD=ukC2ZkcG_ZTeb
+MYSQL_ROOT_PASSWORD=oofaekei6aNg
 MYSQL_ENTRYPOINT_INITDB=./mysql/docker-entrypoint-initdb.d
 
 ### zentaopms #################################################
