@@ -1,6 +1,6 @@
 FROM debian:10-slim
 
-LABEL maintainer="zentao Docker Maintainers <chaiyd.cn@gmail.com>"
+LABEL maintainer="xiagw <fxiaxiaoyu@gmail.com>"
 
 # If you're in China, or you need to change sources, will be set CHANGE_SOURCE to true in .env.
 ARG CHANGE_SOURCE=false

@@ -1,18 +1,24 @@
-# If you need to change the sources (i.e. to China), set CHANGE_SOURCE to true
+## If you need to change the sources (i.e. to China), set CHANGE_SOURCE to true
+## 如果你在中国地区，可以设置 CHANGE_SOURCE=true
 CHANGE_SOURCE=false
 # CHANGE_SOURCE=true
 
+## 如果你在中国地区，可以设置 TZ=Asia/Shanghai
 TZ=UTC
 # TZ=Asia/Shanghai
 
 ### MYSQL #################################################
 MYSQL_VERSION=latest
+# MYSQL_VERSION=5.7
 MYSQL_DATABASE=zentao
 MYSQL_USER=zentao
+## 请务必修改此处密码
 MYSQL_PASSWORD=eeVaixav5eiw
 MYSQL_PORT=3306
+## 请务必修改此处密码
 MYSQL_ROOT_PASSWORD=oofaekei6aNg
 MYSQL_ENTRYPOINT_INITDB=./mysql/docker-entrypoint-initdb.d
 
 ### zentaopms #################################################
+## 根据官方发布版本修改
 ZENTAO_VERSION=12.5.3

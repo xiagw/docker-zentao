@@ -1,4 +1,4 @@
-## docker-zentao
+## 下载 docker-zentao
 
 `git clone https://github.com/xiagw/docker-zentao.git`
 
@@ -19,7 +19,7 @@
 * 首次运行
 * 浏览器访问http://ip:9080
 * 如果网页界面显示禅道默认安装界面，说明容器运行正常。
-* 依照禅道安装程序（数据库主机填写`mysql`）安装成功，就可以使用了。
+* 依照禅道安装程序（数据库服务器主机填写`mysql`）安装成功，就可以使用了。
 
 ## 差异说明
 此版本 docker image 使用debian:10-slim 构建，(zentao/Dockerfile)
@@ -28,4 +28,4 @@
 
 此镜像不包含数据库，数据库额外加载mysql容器，(详细请查看 docker-compose.yml)
 
-
+fork 于 https://github.com/chaiyd/zentao，做了优化和修改，感谢！！
