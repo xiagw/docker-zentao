@@ -16,4 +16,5 @@ chmod -R a+rx /app/zentaopms/bin/*
 
 chown -R www-data:www-data /app/zentaopms
 
-tail -f /var/log/apache2/zentao_error_log
+# tail -f /var/log/apache2/zentao_error_log
+apache2ctl -D FOREGROUND
