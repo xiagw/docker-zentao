@@ -1,31 +1,32 @@
-## 下载 docker-zentao
+## download docker-zentao
 
 `git clone https://github.com/xiagw/docker-zentao.git`
 
-## 禅道
-* 禅道是专业的研发项目管理软件
-* 官网：https://github.com/easysoft/zentaopms
+## zentaopms
+* Zentao is an agile(scrum) project management system/tool, Free Upgrade Forever!​
+* Official: https://github.com/easysoft/zentaopms
 
-## 准备
-* install docker
-* install docker-composer
+## initial preparation work
+* [install docker](https://docs.docker.com/engine/install/)
+* [install docker-composer](https://docs.docker.com/compose/install/)
 * `cp env-example .env`
-* 修改.env文件内部参数/时区(默认UTC)/密码等信息
+* update `.env`, include timezone(default UTC)/password, etc.
 
-## 启动
+## startup
 `docker-compose up -d`
 
-## 访问和安装
-* 首次运行
-* 浏览器访问http://ip:9080
-* 如果网页界面显示禅道默认安装界面，说明容器运行正常。
-* 依照禅道安装程序（数据库服务器主机填写`mysql`）安装成功，就可以使用了。
+## setup and access
+* First run
+* Browser http://host_ip:9080/
+* If you see default installation interface of ZenTao, it means that the container is running normally.
+* Follow the installation and setup database.
+* (fill in `mysql` for the "database server host")
 
-## 差异说明
-此版本 docker image 使用debian:10-slim 构建，(zentao/Dockerfile)
+## Difference
+This version of docker image is built using debian:10-slim, (zentao/Dockerfile)
 
-与官方 image 不同，官方 image 包含mysql数据库，
+Unlike the official image, the official image contains the mysql database,
 
-此镜像不包含数据库，数据库额外加载mysql容器，(详细请查看 docker-compose.yml)
+This image does not contain the database, and the database is loaded with a mysql container (for details, please see docker-compose.yml)
 
-fork 于 https://github.com/chaiyd/zentao，做了优化和修改，感谢！！
+Fork at https://github.com/chaiyd/zentao, optimized and modified, thanks! !
