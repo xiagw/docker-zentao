@@ -17,8 +17,11 @@ ARG TZ=UTC
 ENV TZ ${TZ}
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
-RUN apt-get -y update && \
-    apt-get install -y apache2 php php-curl php-gd php-ldap php-mbstring php-mysql php-xml php-zip php-cli php-json curl unzip libapache2-mod-php \
+RUN set -xe \
+    && apt-get -yq update \
+    && apt-get install -yq --no-install-recommends apache2 php php-curl php-gd \
+    php-ldap php-mbstring php-mysql php-xml php-zip php-cli php-json curl \
+    unzip libapache2-mod-php \
     # Clear dev deps
     && apt-get clean \
     && apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false \
